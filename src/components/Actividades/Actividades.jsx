@@ -11,8 +11,6 @@ function Actividades() {
       if (response.ok) {
         const { apiactividades } = await response.json();
         setActividades(apiactividades || []);
-        console.log(apiactividades);  // Esto imprimirá todas las actividades
-        console.log(apiactividades[2].imagen);  // Esto imprimirá la imagen de la primera actividad
       }
     };
     getActividades();

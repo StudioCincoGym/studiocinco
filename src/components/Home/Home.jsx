@@ -45,7 +45,6 @@ function Home() {
   }, [messages]);
 
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
-  console.log("WhatsApp Number:", whatsappNumber); // Agrega esta línea para depuración
   
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hola,%20quiero%20más%20información%20sobre%20las%20actividades%20del%20gimnasio`;
   

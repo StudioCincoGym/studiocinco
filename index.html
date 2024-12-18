@@ -17,9 +17,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
-    
+    <!-- Cargar Google Fonts de forma asíncrona -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    </noscript>
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://studiocincogym.github.io/studiocinco/" />
 
@@ -71,7 +74,6 @@
         ]
       }
     </script>
-    
     <script type="module" crossorigin src="https://StudioCincoGym.github.io/studiocinco/assets/index-vAedPoBO.js"></script>
     <link rel="stylesheet" crossorigin href="https://StudioCincoGym.github.io/studiocinco/assets/index-Y6-beSSx.css">
   </head>

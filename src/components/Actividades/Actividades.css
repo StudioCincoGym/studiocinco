@@ -1,0 +1,195 @@
+
+
+.actividades-container {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('../../assets/footer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.titulo-titulo {
+    color: #3f9f16;
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    margin-bottom: 90px;
+}
+
+/* Flechas de navegación */
+.scroll-btn {
+    background-color: transparent;
+    color: rgb(63, 172, 0);
+    border: 2px solid rgb(63, 172, 0);
+    border-radius: 50%;
+    font-size: clamp(1rem, 2vw, 2rem);
+    cursor: pointer;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.scroll-btn.left {
+    left: 10px;
+}
+
+.scroll-btn.right {
+    right: 10px;
+}
+
+/* Contenedor con scroll horizontal */
+.actividades-scroll {
+    margin-top: -10vh;
+    width: 80vw;
+    max-width: 80vw;
+    height: 60vh;
+    overflow-x: auto;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 10px rgba(51, 214, 51, 0.4);
+    background-color: rgb(32, 31, 31);
+}
+
+/* Personalización de la barra de desplazamiento */
+.actividades-scroll::-webkit-scrollbar {
+    height: 10px;
+}
+
+.actividades-scroll::-webkit-scrollbar-track {
+    background: rgb(48, 46, 46);
+    border-radius: 10px;
+}
+
+.actividades-scroll::-webkit-scrollbar-thumb {
+    background: rgb(36, 161, 36);
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.actividades-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgb(50, 150, 50);
+}
+
+/* Estilo para las tarjetas */
+.actividades-tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(51, 214, 51, 0.4);
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
+    width: 20vw; 
+    max-width: 300px;
+    height: auto;
+}
+
+.actividad-horarios {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(226, 215, 215);
+}
+
+.actividad-titulo, 
+.actividad-dias, 
+.actividad-precio {
+    color: rgb(226, 215, 215);
+}
+
+.actividades-tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(51, 214, 51, 0.6);
+}
+
+/* Estilos Responsivos */
+@media (max-width: 1024px) {
+    .titulo-titulo {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .scroll-btn {
+        font-size: 1.5rem;
+    }
+
+    .actividades-scroll {
+        width: 100vw;
+    }
+
+    .actividades-tarjeta {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 884px) {
+    .titulo-titulo {
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+    }
+
+    .scroll-btn {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .actividades-tarjeta {
+        width: 60vw;
+        height: 55vh;
+        padding: 4px;
+    }
+
+    .actividades-scroll {
+        width: 65vw;
+        height: 60vh;
+        max-height: 60vh;
+    }
+
+    .actividad-titulo {
+        font-size: 1rem;
+    } 
+    .actividad-dias, .actividad-horarios, .actividad-precio {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .titulo-titulo {
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+    }
+
+    .scroll-btn {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .actividades-tarjeta {
+        width: 60vw;
+        height: 55vh;
+        padding: 4px;
+    }
+
+    .actividades-scroll {
+        width: 65vw;
+        height: 60vh;
+        max-height: 60vh;
+    }
+
+    .actividad-titulo {
+        font-size: 1rem;
+    } 
+    .actividad-dias, .actividad-horarios, .actividad-precio {
+        font-size: 0.8rem;
+    }
+}

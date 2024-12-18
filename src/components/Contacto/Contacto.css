@@ -1,0 +1,180 @@
+.contenedor-contacto{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.contacto {
+  width: 100vw;
+  height: 60vh;
+  background-image: url("../../assets/secreataria.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact-title {
+  margin-top: 20vh;
+  font-size: 3rem;
+  color: #3f9f16;
+  font-family: "Anton", sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Anton", sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1;
+  width: 40vw;
+  height: 30vh;
+}
+
+.footer {
+  top: 0;
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #7ed957;
+}
+
+#ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.mapa {
+  width: 100%;
+  height: 20vh;
+  max-width: 50vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 1024px) {
+  .contact-title {
+      font-size: 6vh;
+      margin-top: 15vh;
+  }
+
+  .contact-info {
+      font-size: 1.2rem;
+  }
+
+  .footer {
+      flex-direction: column;
+      min-height: 60vh;
+      justify-content: center;
+  }
+
+  .mapa {
+      max-width: 60vw;
+      height: 20vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-contacto{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto {
+    height: 70vh;
+    background-image: url("../../assets/secreataria.jpg");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-position: calc(50%) calc(40% + 10px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+  }
+
+  .contact-title {
+      font-size: 5vh;
+      margin: 0;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Anton", sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1;
+  }
+
+  .footer {
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+  }
+
+  .mapa {
+      max-width: 80vw;
+      height: 20vh;
+  }
+}
+
+@media (max-width: 425px) {
+  .contacto{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-title {
+      font-size: 4.5vh;
+      margin: 0;
+  }
+
+  .contact-info {
+      width: 100vw;
+      font-size: 0.8rem;
+  }
+
+  .footer {
+    display: flex;
+      flex-direction: column-reverse;
+      height: 50vh;
+  }
+
+  .mapa {
+      width:80vw ;
+      max-width: 80vw;
+      height: 18vh;
+  }
+  #ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+}

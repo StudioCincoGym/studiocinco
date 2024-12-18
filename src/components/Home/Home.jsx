@@ -51,13 +51,14 @@ function Home() {
   
   return (
     <>
-      <img className='logo' src={logoStudiocinco} alt="Studio Cinco" />
+      <img className='logo' src={logoStudiocinco} alt="Logo de StudioCinco gimnasio en La Rioja" />
       <div className="Home">
         <h1 className="typewriter-text" id="typewriter"></h1><br />
-        <a aria-label="Unete"
+        <a aria-label="Unete a StudioCinco"
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
+          aria-labelledby='telefono StudioCinco'
           className='unete'
         >
           ÚNETE HOY

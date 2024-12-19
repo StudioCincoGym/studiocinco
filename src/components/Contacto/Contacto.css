@@ -99,7 +99,7 @@
   }
   .contacto {
     height: 70vh;
-    background-image: url("../../assets/secreataria.jpg");
+    background-image: url("../../assets/secreataria.avif");
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
     background-position: calc(50%) calc(40% + 10px);

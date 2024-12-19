@@ -2,7 +2,7 @@
 .nosotros-contenido {
     width: 100vw;
     height: 100vh;
-    background-image: url("../../assets/footerr.jpg");
+    background-image: url("../../assets/footerr.avif");
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
     background-position: center;
@@ -61,7 +61,7 @@
     width: 55vw;
     max-width: 400px;
     height: 40vh;
-    background-image: url("/src/assets/frenteee.jpeg");
+    background-image: url("/src/assets/frenteee.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

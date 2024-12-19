@@ -4,22 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/studiocinco/site.webmanifest">
     <title>StudioCinco | Gimnasio en La Rioja | Rutinas Personalizadas</title>
     
     <!-- Favicon -->
-    <link rel="icon" href="/android-chrome-192x192.png" type="image/png">
+    <link rel="icon" href="/studiocinco/android-chrome-192x192.png" type="image/png">
     
     <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/studiocinco/apple-touch-icon.png">
     
     <!-- Preconnect para fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
-    
+    <!-- Cargar Google Fonts de forma asíncrona -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    </noscript>
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://studiocincogym.github.io/studiocinco/" />
 
@@ -27,12 +30,12 @@
     <meta name="description" content="StudioCinco es un gimnasio en La Rioja con rutinas personalizadas para mejorar tu salud y bienestar. ¡Únete hoy a nuestro gimnasio y alcanza tus objetivos!" />
 
     <!-- Meta Keywords -->
-    <meta name="keywords" content="StudioCinco, gimnasio, fitness, rutinas personalizadas, La Rioja, salud, bienestar, gimnasio en La Rioja" />
+    <meta name="keywords" content="StudioCinco, Studio5, Studio Cinco, estudio cinco, gimnasio, fitness, rutinas personalizadas, La Rioja, salud, bienestar, gimnasio en La Rioja" />
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="StudioCinco | Gimnasio en La Rioja" />
     <meta property="og:description" content="Gimnasio StudioCinco en La Rioja con rutinas personalizadas para mejorar tu bienestar." />
-    <meta property="og:image" content="https://studiocincogym.github.io/studiocinco/favicon.ico" />
+    <meta property="og:image" content="https://studiocincogym.github.io/studiocinco/android-chrome-512x512.png" />
     <meta property="og:url" content="https://studiocincogym.github.io/studiocinco/" />
     <meta property="og:type" content="website" />
     
@@ -41,7 +44,7 @@
     <meta name="twitter:site" content="@StudioCinco" />
     <meta name="twitter:title" content="StudioCinco | Gimnasio en La Rioja" />
     <meta name="twitter:description" content="StudioCinco ofrece rutinas personalizadas para ayudarte a alcanzar tus objetivos de salud y bienestar." />
-    <meta name="twitter:image" content="https://studiocincogym.github.io/studiocinco/favicon.ico" />
+    <meta name="twitter:image" content="https://studiocincogym.github.io/studiocinco/android-chrome-512x512.png" />
     
     <!-- Robots Meta Tag -->
     <meta name="robots" content="index, follow" />
@@ -55,7 +58,7 @@
         "name": "StudioCinco",
         "description": "StudioCinco es un gimnasio que ofrece rutinas personalizadas en La Rioja, Argentina.",
         "url": "https://studiocincogym.github.io/studiocinco/",
-        "logo": "https://studiocincogym.github.io/studiocinco/favicon.ico",
+        "logo": "https://studiocincogym.github.io/studiocinco/android-chrome-512x512.png",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Dardo de la Vega Díaz 395",
@@ -71,10 +74,9 @@
         ]
       }
     </script>
-    
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script defer type="module" src="/src/main.jsx"></script>
   </body>
 </html>
